@@ -58,9 +58,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-const name = '1999';
-name = 1999;
-console.log(name);
+let text = '1999';
+let change = parseInt(text,10);
+console.log(change);
 
 
 
@@ -90,8 +90,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+dogYears(7)
+let age;
+function dogYears(age){
+    let humanYear = age * 7;
+    return humanYear;
 }
 
 
