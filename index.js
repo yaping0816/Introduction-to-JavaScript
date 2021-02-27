@@ -58,6 +58,9 @@ Do the following:
 
    HINT: look up the Number method
 */
+const name = '1999';
+name = 1999;
+console.log(name);
 
 
 
