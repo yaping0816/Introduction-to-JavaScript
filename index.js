@@ -126,7 +126,7 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(ageOfDog, weight){
+function hungryDog(weight, ageOfDog){
   let foodToFeed;
 
   if(ageOfDog>=2/12 && ageOfDog<4/12){
@@ -176,7 +176,33 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
+  if(user==='rock'){
+    if(computer==='rock'){
+      return "it's a tie";
+    }else if(computer==='paper'){
+      return 'you lose!';
+    }else if(computer==='scissors'){
+      return 'you win!';
+    }
+  }
+   if(user==='paper'){
+    if(computer==='rock'){
+      return "you win!";
+    }else if(computer==='paper'){
+      return "it's a tie";
+    }else if(computer==='scissors'){
+      return 'you lose!';
+    }
+  }
+    if(user==='scissors'){
+    if(computer==='rock'){
+      return 'you lose!';
+    }else if(computer==='paper'){
+      return 'you win!';
+    }else if(computer==='scissors'){
+      return "it's a tie";
+    }
+  } 
 }
   
   
