@@ -35,6 +35,14 @@ Do the following:
 
    HINT: no function required
 */
+let fruit = 'apples';
+const name = 'Amy';
+
+if(name==='Amy'){
+  fruit = 'oranges';
+  console.log(fruit);
+}
+
 
 
 
