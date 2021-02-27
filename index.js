@@ -233,8 +233,9 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cmNumbers){
+    let feetNumbers = cmNumbers / 30.48;
+    return feetNumbers;
   }
  
 
