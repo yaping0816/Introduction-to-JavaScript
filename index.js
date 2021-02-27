@@ -91,7 +91,7 @@ Do the following:
 */
 
 dogYears(7)
-let age;
+
 function dogYears(age){
     let humanYear = age * 7;
     return humanYear;
@@ -126,9 +126,31 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(ageOfDog, weight){
+  let foodToFeed;
+
+  if(ageOfDog>=2/12 && ageOfDog<4/12){
+    foodToFeed = weight * 0.1;        
+  }else if(ageOfDog>=4/12 && ageOfDog<7/12){
+    foodToFeed = weight * 0.05;      
+  }else if(ageOfDog>=7/12 && ageOfDog<1){
+    foodToFeed = weight * 0.04;      
+  }else if(ageOfDog>=1){
+    if (weight<=5){
+      foodToFeed = weight * 0.05;
+    }else if(weight<=10 && weight>=6){
+      foodToFeed = weight *0.04;
+    }else if(weight>=11 && weight<=15){
+      foodToFeed = weight * 0.03
+    }
+    else if(weight > 15){
+      foodToFeed = weight * 0.02;
+    }
   }
+  return foodToFeed;
+  }
+
+  
 
 
 
